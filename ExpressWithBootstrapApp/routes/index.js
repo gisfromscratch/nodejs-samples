@@ -8,6 +8,8 @@ exports.index = function (req, res) {
 };
 
 exports.about = function (req, res) {
+    var mail = req.body.email;
+    var pass = req.body.pwd;
     res.render('about', { title: 'About', year: new Date().getFullYear(), message: 'Sample express application' });
 };
 
