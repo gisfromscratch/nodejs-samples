@@ -17,3 +17,18 @@ block content
     br
     strong Marketing: 
     a(href='mailto:#{marketingMail}') #{marketingMail}
+
+  address
+    strong Form:
+    form.form-horizontal
+      container.form-group
+        label.control-label.col-sm-2(for='email') Email:
+        container.col-sm-10
+          input.form-control(type='email', id='email', placeholder='mail@postbox.de')
+      container.form-group
+        label.control-label.col-sm-2(for='pwd') Password:
+        container.col-sm-10
+          input.form-control(type='password', id='pwd', placeholder='Enter password')
+      container.form-group
+        container.col-sm-offset-2.col-sm-10
+          button.btn.btn-default(type='submit') Submit
